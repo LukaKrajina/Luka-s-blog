@@ -2,7 +2,7 @@
 
 A sleek, high-performance personal technical blog and project portfolio built entirely with Vanilla JavaScript, HTML5, and CSS3. 
 
-This hub serves as a central nexus for exploring technical documentation, rendering architectures (like UE5 plugins), decentralized systems, and other development projects. It requires no complex build tools or backend servers, running completely client-side.
+This hub serves as a central nexus for exploring technical documentation, AI, decentralized systems, and other development projects. It requires no complex build tools or backend servers, running completely client-side.
 
 ## 🎨 Styling Conventions: Liquid Glass x Aviary
 
