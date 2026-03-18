@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luka's nest</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link id="hljs-theme" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-light.min.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body class="light-theme">
+  <header class="glass-panel top-bar">
+    <div class="search-container">
+      <input type="text" id="repo-search" placeholder="Search repositories...">
+    </div>
+    <div class="status-container">
+      <span id="clock" class="time-display">00:00:00</span>
+      <span class="sync-status">Last Sync: <span id="last-update">Fetching...</span></span>
+    </div>
+    <div class="controls" style="display: flex; align-items: center;">
+      <div id="translate-wrapper" class="translate-wrapper">
+        <div id="google_translate_element"></div>
+        <button id="ms-translate-btn" title="Translate with Microsoft" style="display: none;">
+          <i class='bx bx-globe'></i> MS Translate
+        </button>
+      </div>
+      <button id="theme-toggle" title="Toggle Night Mode"><i class='bx bx-moon'></i></button>
+      <div class="profile-dropdown-container">
+        <img src="https://github.com/LukaKrajina.png" alt="Avatar" class="github-avatar" id="avatar-btn">
+        <div class="dropdown-menu glass-panel" id="social-dropdown">
+          <a href="https://x.com/nezumichan95762" target="_blank"><i class='bx bxl-twitter'></i> X (Twitter)</a>
+          <a href="https://github.com/LukaKrajina" target="_blank"><i class='bx bxl-github'></i> GitHub</a>
+        </div>
+    </div>
+  </header>
+
+  <main class="container">
+    
+    <section class="glass-panel profile-section">
+      <h1>Developer Hub</h1>
+      <p>Exploring rendering, decentralized systems, and the edges of technology.</p>
+    </section>
+
+    <div class="grid-layout">
+      <section class="glass-panel repos-section">
+        <h2>Repositories</h2>
+        <div id="repo-list" class="repo-grid">
+          <div class="repo-card glass-panel">Loading...</div>
+        </div>
+      </section>
+
+      <section class="glass-panel docs-section">
+        <h2>Technical Documentation</h2>
+        <div class="docs-layout">
+          <ul class="doc-links" id="doc-nav">
+            <li><a href="#" data-file="overview.md">Overview</a></li> 
+            <li><a href="#" data-file="eden-UE5-plugin.md">Eden UE5 Plugin Doc</a></li>
+            <li><a href="#" data-file="eden.md">Eden Doc</a></li>
+            <li><a href="#" data-file="lancelot.md">Lancelot Doc</a></li>
+          </ul>
+          
+          <div id="doc-content" class="doc-display">
+            <p>Select a document from the menu to load it here.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="glass-panel discussion-section">
+      <h2>Discussions</h2>
+      <div id="discussion-container">
+        <script src="https://giscus.app/client.js"
+            data-repo="LukaKrajina/eden"
+            data-repo-id="R_kgDORVO7lw"
+            data-category="General"
+            data-category-id="DIC_kwDORVO7l84C4mpv"
+            data-mapping="pathname"
+            data-strict="0"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="bottom"
+            data-theme="transparent_dark"
+            data-lang="zh-CN"
+            crossorigin="anonymous"
+            async>
+        </script>
+      </div>
+    </section>
+  </main>
+
+  <footer class="glass-panel footer-section">
+    <div class="contact-info">
+      <h3>Contact</h3>
+      <p>Email: tamarkwalen3ackf@outlook.com</p>
+      <div class="visit-counter">
+        <i class='bx bx-bar-chart-alt-2'></i> Total Visits: <span id="visit-count">...</span>
+      </div>
+    </div>
+  </footer>
+
+
+  <div id="music-toast" class="glass-panel toast-notification">
+    <strong>Now Playing</strong><br>
+    Song: Diviners feat. Contacreast - Tropic Love [NCS Release] <br>
+    Music provided by NoCopyrightSounds <br>
+    Free Download/Stream: <a href="http://ncs.io/tropiclove" target="_blank">http://ncs.io/tropiclove</a> <br>
+    Watch: <a href="http://youtu.be/u6RJv7f__Mg" target="_blank">http://youtu.be/u6RJv7f__Mg</a>
+  </div>
+
+  <div id="album-player" class="album-container" title="Play/Pause Music">
+    <img src="https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/000/120/100x100/tropic-love-feat-contacreast-1586946709-QYHdlqsmye.jpg" alt="Album Cover" id="album-art" class="album-art">
+  </div>
+
+  <audio id="bg-music" loop>
+    <source src="/misc/misuc/Diviners, Contacreast - Tropic Love (feat. Contacreast) [NCS Release].mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked@9.1.6/marked.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="./js/app.js"></script>
+
+  </body>
+</html>
